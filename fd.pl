@@ -28,8 +28,8 @@ $help = <<"EOF";
         -t   trios file. Three colums: pop1, pop2, pop3. No outgroup, outgroup is specified in map file.
         -m   map flie. Two columns: sample name, population name. Population name of outgroup sample must be 'Outgroup'.
         -i   interval file. Three columns: chromosome name, 1-based start coordinate, 1-based end coordinate.
-        -w   window size for sliding window. Default is 30kb.
-        -s   step size for sliding window. Default is 10kb.
+        -w   window size for sliding window. Default is 30000.
+        -s   step size for sliding window. Default is 10000.
         -p   number of processors to use. Default is 4.
         -h   help message.
 EOF
