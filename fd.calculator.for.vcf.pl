@@ -216,15 +216,9 @@ print STDERR "All complete!\n";
 ##### subroutines #####
 sub splice_d_fd_for_sliding {
 	for $key (keys %ABBA) {
-		print scalar @{$ABBA{$key}}; print "\n";
-		print scalar @{$BABA{$key}}; print "\n";
-		print scalar @{$denominator_fd{$key}}; print "\n";
 		splice @{$ABBA{$key}}, 0, $step;
 		splice @{$BABA{$key}}, 0, $step;
 		splice @{$denominator_fd{$key}}, 0, $step;
-		print scalar @{$ABBA{$key}}; print "\n";
-		print scalar @{$BABA{$key}}; print "\n";
-		print scalar @{$denominator_fd{$key}}; print "\n";
 	}
 }
 
